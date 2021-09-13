@@ -5,7 +5,7 @@ import { Platform } from "react-native";
 export const Container = styled.View`
 
     flex: 1;
-    background-Color: #784ECB;
+    background-Color: #FFF;
     padding-left: 30px;
     padding-top: 70px;
     padding-right: 30px;
@@ -13,7 +13,7 @@ export const Container = styled.View`
 `
 
 export const Title = styled.Text`
-    color: #FFF;
+    color: #909090;
     font-size: 30px;
     padding-bottom: 10px;
     font-weight: bold;
@@ -21,17 +21,18 @@ export const Title = styled.Text`
 `
 
 export const Input = styled.TextInput`
-    background-color: #000000;
-    color: #FFF;
+    background-color: #FFF;
+    color: #000000;
     font-size: 18px;
     padding: ${Platform.OS === 'ios' ? '15px' : '9px'};
     margin-top: 5px;
-    border: 1px solid palevioletred;
+    border: 2px #909090;
     border-radius: 20px;
+
 `
 
 export const TitleCadastrar = styled.Text`
-    color: #FFF;
+    color: #909090;
     font-size: 20px;
     font-weight: bold;
     margin-top: 16px;

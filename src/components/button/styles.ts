@@ -2,16 +2,16 @@ import styled from "styled-components/native";
 import { TouchableOpacity } from "react-native";
 
 export const ButtonOpacity = styled(TouchableOpacity)`
-    background-color: #000000;
+    background-color: #FFF;
     padding: 15px;
     border-radius: 20px;
     align-items: center;
     margin-top: 30px;
-    border: 1px solid palevioletred;
+    border: 2px #909090;
 `
 
 export const ButtonText = styled.Text`
-    color: #FFF;
+    color: #909090;
     font-size: 18px;
     font-weight: bold;
 `

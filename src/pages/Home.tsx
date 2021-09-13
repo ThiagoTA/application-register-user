@@ -4,7 +4,7 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
     
 import { Container, Title, Input, TitleCadastrar } from './styles';
 import { Button } from '../components/button/Button';
-import { CadastrarCard } from '../components/skillCards/SkillCard';
+import { CadastrarCard } from '../components/registerCards/RegisterCard';
 
 interface ICadastroData {
   id: string;
@@ -58,16 +58,15 @@ export function Home() {
 
   return (
     <>
+    <ScrollView>
     <Container>
 
       <Title>Cadastrar Usuário</Title>
     
-    <ScrollView>
-
       <TitleCadastrar>Nome:</TitleCadastrar>
       <Input 
       placeholder="Digite o nome"
-      placeholderTextColor='#e0c6c6'
+      placeholderTextColor='#909090'
       value={newNome}
       onChangeText={value => setNewNome(value)}
       />
@@ -75,7 +74,7 @@ export function Home() {
       <TitleCadastrar>Email:</TitleCadastrar>
       <Input 
       placeholder="Digite o email"
-      placeholderTextColor='#e0c6c6'
+      placeholderTextColor='#909090'
       value={newEmail}
       onChangeText={value => setNewEmail(value)}
       />
@@ -83,7 +82,7 @@ export function Home() {
       <TitleCadastrar>Telefone:</TitleCadastrar>
       <Input 
       placeholder="Digite o telefone"
-      placeholderTextColor='#e0c6c6'
+      placeholderTextColor='#909090'
       value={newTelefone}
       onChangeText={value => setNewTelefone(value)}
       />
@@ -109,8 +108,8 @@ export function Home() {
           />
         )}
       />
-    </ScrollView>
     </Container>
+    </ScrollView>
     </>
   );
 }
